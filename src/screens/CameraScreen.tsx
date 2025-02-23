@@ -1,13 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import AppNavigator from './src/navigation/AppNavigator'
 
-const App = () => {
+const CameraScreen = () => {
   return (
-    <AppNavigator />
+    <View>
+      <Text>CameraScreen</Text>
+    </View>
   )
 }
 
-export default App
+export default CameraScreen
 
 const styles = StyleSheet.create({})

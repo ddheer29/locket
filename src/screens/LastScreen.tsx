@@ -1,13 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import AppNavigator from './src/navigation/AppNavigator'
 
-const App = () => {
+const LastScreen = () => {
   return (
-    <AppNavigator />
+    <View>
+      <Text>LastScreen</Text>
+    </View>
   )
 }
 
-export default App
+export default LastScreen
 
 const styles = StyleSheet.create({})
