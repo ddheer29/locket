@@ -15,6 +15,11 @@ const AddWidgetScreen = () => {
   return (
     <CustomView>
       <Text style={styles.title}>{'Finally, add the widget\nto your home screen'}</Text>
+
+      <View>
+
+      </View>
+
       <Text style={styles.secondaryText}>
         {
           activeIndex === 0
