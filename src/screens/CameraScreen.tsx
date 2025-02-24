@@ -73,14 +73,14 @@ const CameraScreen = () => {
       </View>
 
       {/* Camera View */}
-      {/* <Camera
+      <Camera
         ref={cameraRef}
         style={styles.camera}
         device={currentDevice}
         isActive={true}
         photo={true}
         torch={flash}
-      /> */}
+      />
 
       {/* Capture Button */}
       <View style={styles.bottomControls}>
