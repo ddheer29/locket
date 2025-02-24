@@ -2,6 +2,8 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { Colors } from '../constants/Colors'
+import LandingMobileFrame from '../frames/LandingMobileFrame'
+import ContinueArrow from '../assets/ContinueArrow'
 
 const LandingScreen = () => {
   const navigation = useNavigation()
@@ -12,6 +14,7 @@ const LandingScreen = () => {
 
   return (
     <View style={styles.container}>
+      <LandingMobileFrame />
       <View>
         <Text style={{
           color: Colors.white,
@@ -38,17 +41,21 @@ const LandingScreen = () => {
             paddingVertical: 16,
             borderRadius: 100,
             marginTop: 24,
-            paddingHorizontal: 20
+            paddingHorizontal: 20,
+            flexDirection: 'row',
+            alignItems: 'center',
           }}
           onPress={handleOnPress}
         >
           <Text style={{
             color: Colors.btnText,
             fontWeight: 500,
-            fontSize: 16
+            fontSize: 16,
+            marginRight: 8,
           }}>
             Set up my Loacket
           </Text>
+          <ContinueArrow color={Colors.btnText} size={20} />
         </TouchableOpacity>
       </View>
     </View>

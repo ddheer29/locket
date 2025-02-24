@@ -11,8 +11,7 @@ const ContinueArrow = ({color = '#fff', size = 32}) => (
     strokeWidth={2}
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="lucide lucide-move-right"
-    {...props}>
+    className="lucide lucide-move-right">
     <Path d="M18 8L22 12L18 16" />
     <Path d="M2 12H22" />
   </Svg>
