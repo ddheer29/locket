@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import CustomView from '../components/CustomView'
 import { useNavigation, useRoute } from '@react-navigation/native'
 import { Colors } from '../constants/Colors'
+import BackArrowSVG from '../assets/BackArrow'
 
 interface VerifyOtpScreenParams {
   phoneNumber: string;
@@ -23,7 +24,7 @@ const VerifyOtpScreen = () => {
       <TouchableOpacity
         style={{ position: 'absolute', left: 20, top: 80, backgroundColor: 'rgb(50, 45, 39)', width: 50, height: 50, justifyContent: 'center', alignItems: 'center', borderRadius: 100 }}
         onPress={() => navigation.goBack()}>
-        <Text>⬅️</Text>
+        <BackArrowSVG />
       </TouchableOpacity>
 
       <KeyboardAvoidingView
@@ -42,6 +43,7 @@ const VerifyOtpScreen = () => {
               placeholder="6-Digit code"
               placeholderTextColor="#666666"
               selectionColor={Colors.btnColor}
+              maxLength={6}
             />
           </View>
 

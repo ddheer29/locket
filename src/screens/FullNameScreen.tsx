@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { useNavigation, useRoute } from '@react-navigation/native';
 import CustomView from '../components/CustomView';
 import { Colors } from '../constants/Colors';
+import BackArrowSVG from '../assets/BackArrow';
 
 const FullNameScreen = () => {
   const route = useRoute();
@@ -19,7 +20,7 @@ const FullNameScreen = () => {
       <TouchableOpacity
         style={{ position: 'absolute', left: 20, top: 80, backgroundColor: 'rgb(50, 45, 39)', width: 50, height: 50, justifyContent: 'center', alignItems: 'center', borderRadius: 100 }}
         onPress={() => navigation.goBack()}>
-        <Text>⬅️</Text>
+        <BackArrowSVG />
       </TouchableOpacity>
 
       <KeyboardAvoidingView

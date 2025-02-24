@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import CustomView from '../components/CustomView'
 import { Colors } from '../constants/Colors'
 import { useNavigation } from '@react-navigation/native'
+import BackArrowSVG from '../assets/BackArrow'
 
 const countryCodes = [
   { code: 'GB', flag: '🇬🇧', dialCode: '44' },
@@ -66,7 +67,7 @@ const PhoneNumberScreen = () => {
       <TouchableOpacity
         style={{ position: 'absolute', left: 20, top: 80, backgroundColor: 'rgb(50, 45, 39)', width: 50, height: 50, justifyContent: 'center', alignItems: 'center', borderRadius: 100 }}
         onPress={() => navigation.goBack()}>
-        <Text>⬅️</Text>
+        <BackArrowSVG />
       </TouchableOpacity>
 
       <KeyboardAvoidingView
@@ -92,6 +93,7 @@ const PhoneNumberScreen = () => {
               placeholder="Enter phone number"
               placeholderTextColor="#666666"
               selectionColor={Colors.btnColor}
+              maxLength={10}
             />
           </View>
 
