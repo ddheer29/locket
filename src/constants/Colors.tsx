@@ -13,5 +13,9 @@ export enum Colors {
   lightText = '#888',
   black = '#000',
   btnColor = 'rgb(245, 187, 64)',
-  btnText = 'rgb(49, 38, 7)'
+  btnText = 'rgb(49, 38, 7)',
+  frameContainer = 'rgb(130, 130, 129)',
+  frameIcons = 'rgb(87, 87, 85)',
+  frameBtmBar = 'rgb(62, 60, 60)',
+  frameYellow = 'rgb(225, 180, 37)',
 }
