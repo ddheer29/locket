@@ -3,6 +3,7 @@ import React from 'react'
 import { useNavigation } from '@react-navigation/native';
 import CustomView from '../components/CustomView';
 import { Colors } from '../constants/Colors';
+import LastScreenWidget from '../frames/LastScreenWidget';
 
 const { width, height } = Dimensions.get("window");
 
@@ -19,7 +20,13 @@ const LastScreen = () => {
 
       <Text style={styles.text}>{'Tap the Plus button\nin the top left corner'}</Text>
 
-      <View>
+      <View
+        style={{
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
+        <LastScreenWidget />
       </View>
 
       <TouchableOpacity

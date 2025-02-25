@@ -1,6 +1,6 @@
 import { Dimensions, Image, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { colors } from '../utils/Theme';
+import { Colors } from '../constants/Colors';
 const { width, height } = Dimensions.get('window');
 
 const WidgetScreen2 = () => {
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     width: '60%',
     height: '80%',
     borderWidth: 10,
-    borderColor: colors.gray,
+    borderColor: Colors.frameContainer,
     borderRadius: 30,
     transform: [{ rotate: '-8deg' }],
     // backgroundColor: Colors.background,
@@ -89,15 +89,15 @@ const styles = StyleSheet.create({
   gridItem: {
     width: 25,
     height: 25,
-    backgroundColor: 'gray',
+    backgroundColor: Colors.frameIcons,
     borderRadius: 8,
     margin: 5,
   },
   bottomRectangle: {
     width: '88%',
     height: 32,
-    backgroundColor: 'gray',
+    backgroundColor: Colors.frameBtmBar,
     borderRadius: 14,
-    marginTop: 80
+    marginTop: 60
   },
 })

@@ -1,10 +1,12 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React, { FC } from 'react'
 import { Colors } from '../constants/Colors'
+import WidgetScreen3 from '../frames/WidgetScreen3'
 
 const WidgetCard3: FC = () => {
   return (
     <View>
+      <WidgetScreen3 />
       <Text style={styles.text}>{'Search for Locket\nand add the widget'}</Text>
     </View>
   )

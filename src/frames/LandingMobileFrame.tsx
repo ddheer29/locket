@@ -4,13 +4,14 @@ import { Colors } from '../constants/Colors';
 
 const { width, height } = Dimensions.get('window');
 
-const LandingMobileFrame = ({ page }) => {
+const LandingMobileFrame = () => {
   return (
-    <View style={{
-      height: height * 0.5, width: 300,
-      alignItems: 'center',
-      justifyContent: 'center',
-    }}>
+    <View
+      style={{
+        height: height * 0.5, width: 300,
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}>
       <View style={styles.outerFrame}>
         <View style={styles.profileImageContainer}>
           <Image

@@ -1,6 +1,7 @@
 import { Dimensions, Image, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { colors } from '../utils/Theme';
+import { Colors } from '../constants/Colors';
 const { width, height } = Dimensions.get('window');
 
 const LastScreenWidget = () => {
@@ -50,7 +51,7 @@ const styles = StyleSheet.create({
     width: '60%',
     height: '80%',
     borderWidth: 10,
-    borderColor: 'rgb(230, 183, 28)',
+    borderColor: Colors.frameYellow,
     borderRadius: 30,
     transform: [{ rotate: '-6deg' }],
     // backgroundColor: Colors.background,
@@ -67,7 +68,7 @@ const styles = StyleSheet.create({
     width: 54,
     height: 54,
     borderRadius: 10,
-    backgroundColor: 'rgb(230, 183, 28)',
+    backgroundColor: Colors.frameYellow,
     position: 'absolute',
     top: 24,
     left: 18,
@@ -101,6 +102,6 @@ const styles = StyleSheet.create({
     height: 32,
     backgroundColor: 'rgb(54, 53, 54)',
     borderRadius: 14,
-    marginTop: 120
+    marginTop: 90
   },
 })

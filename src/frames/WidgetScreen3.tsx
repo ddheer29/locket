@@ -1,6 +1,8 @@
 import { Dimensions, Image, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { colors } from '../utils/Theme';
+import SearchSVG from '../assets/SearchSVG';
+import { Colors } from '../constants/Colors';
 const { width, height } = Dimensions.get('window');
 
 const WidgetScreen3 = () => {
@@ -15,7 +17,7 @@ const WidgetScreen3 = () => {
         <View
           style={{
             width: '100%',
-            height: '88%',
+            height: '94%',
             alignItems: 'center',
             justifyContent: 'flex-end',
             paddingVertical: 10,
@@ -35,10 +37,11 @@ const WidgetScreen3 = () => {
             }}
           />
           <View style={styles.bottomRectangle}>
-            <Text>@</Text>
+            <SearchSVG />
             <Text
               style={{
                 color: 'rgb(188, 187, 187)',
+                fontSize: 12,
               }}
             >Locket</Text>
           </View>
@@ -63,7 +66,7 @@ const styles = StyleSheet.create({
     width: '60%',
     height: '80%',
     borderWidth: 10,
-    borderColor: 'rgb(128, 127, 127)',
+    borderColor: Colors.frameContainer,
     borderRadius: 30,
     transform: [{ rotate: '8deg' }],
     // backgroundColor: Colors.background,

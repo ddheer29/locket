@@ -143,6 +143,8 @@ const styles = StyleSheet.create({
   card: {
     width: width,
     height: height * 0.6,
+    justifyContent: 'center',
+    alignItems: 'center'
   },
 
   buttonText: {
